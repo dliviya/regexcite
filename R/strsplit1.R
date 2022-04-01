@@ -1,12 +1,14 @@
-#' Title
+#' Split a string
 #'
-#' @param x (a list)load_all()
-#' @param split (a character to split the list by)
+#' @param x A character vector with one element.
+#' @param split What to split on.
 #'
-#' @return retuns a list of elements from a list
+#' @return A character vector.
 #' @export
 #'
 #' @examples
+#' x <- "alfa,bravo,charlie,delta"
+#' strsplit1(x, split = ",")
 strsplit1 <- function(x, split) {
   strsplit(x, split = split)[[1]]
 }
